@@ -1,0 +1,62 @@
+@import url(bookStyle.css);
+main {
+  height: 130vh;
+}
+
+.delivery-title {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+.delivery-form-text {
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
+.delivery-form-name-value, .delivery-form-place-value, .delivery-form-surname-value, .delivery-form-event-value {
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  margin: auto;
+  width: 400px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: white;
+}
+.delivery-form-adress-value {
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin: auto;
+  width: 400px;
+  height: 50px;
+}
+.delivery-submit {
+  color: white;
+  font-size: 40px;
+  font-family: sans-serif;
+  text-decoration: none;
+  display: block;
+  width: 400px;
+  height: 50px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #000000;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.delivery-submit:hover {
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=form.css.map */

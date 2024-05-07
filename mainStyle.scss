@@ -1,0 +1,109 @@
+@import url(view.css);
+@mixin textProperty($font-size){
+    font-family: sans-serif;
+    color: #1a1a1a;
+    font-size: $font-size;
+    text-decoration: none;
+}
+body{
+    min-height: 150vh;
+}
+main{
+    background-color: #1a1a1a;
+    height: 180vh;
+}
+.top-event{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 90px;
+    margin: auto;
+    height: 180vh;
+    &-container{
+        background-color: white;
+        margin: auto;
+        margin-top: 100px;
+        box-shadow:0 0 10px 10px rgb(44, 44, 44);
+        border-radius: 5%;
+        width: 25vw;
+        height: 60vh;
+
+        &-text{
+            @include textProperty(40px);
+            display: block;
+            text-align: center;
+            transition: 0.5s;
+            opacity: 0;
+            background: #2c2c2c;
+            text-transform: capitalize;
+            text-align: center;
+            color: #b6b6b6;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-stroke: 2px transparent;
+        }
+        &-details{
+            @include textProperty(30px);
+            opacity: 0;
+            display: block;
+            width: 50%;
+            height: 10%;
+            padding: 5px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin: auto;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            transition: 0.3s;
+            &:hover{
+                background-color: white;
+                color:  #1a1a1a;
+                box-shadow: 0 0 5px 5px black;
+            }
+        }
+        &-number{
+            opacity: 0;
+            text-align: center;
+            transition: 0.5s;
+            @include textProperty(250px);
+            background: #2c2c2c;
+            text-transform: capitalize;
+            text-align: center;
+            color: #ada9a9;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-stroke: 10px transparent;
+        }
+        &:hover{
+            .top-event-container{
+                &-text , &-number , &-details{opacity: 1;}
+                
+            }
+        }
+        &.event1{
+            background-image: url(topEvent.jpg);
+            background-size: contain;
+        }
+        &.event2{
+            background-image: url(stand-up.jpeg);
+            background-size: contain;
+        }
+        &.event3{
+            background-image: url(scorpions.jpg);
+            background-size: contain;
+        }
+        &.event4{
+            background-image: url(tursnbek.png);
+            background-size: contain;
+        }
+        &.event5{
+            background-image: url(ne-prost.webp);
+            background-size: contain;
+        }
+        &.event6{
+            background-image: url(orda.jpg);
+            background-size: contain;
+        }
+    }
+}

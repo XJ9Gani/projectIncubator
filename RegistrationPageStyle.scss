@@ -1,0 +1,176 @@
+@mixin textProperty{
+    font-family: sans-serif;
+    color: #1a1a1a;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-image: url(party1.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.registration{
+    overflow: hidden;
+    width: 70vw;
+    height: 90vh;
+    margin: auto;
+    margin-top: 5vh;
+    border-radius: 30px;
+    box-shadow: 0 0 40px 10px rgb(77, 16, 77);
+    display: grid;
+    grid-template-areas: 
+    "img panel";
+    &-img{
+        background-image: url(party.jpg);
+        background-size: cover;
+    }
+    &-panel{
+            background: linear-gradient(to right , rgb(187, 8, 92) , rgb(145, 14, 252));
+        &-text{
+            @include textProperty;
+            font-size: 50px;
+            margin: 0;
+            text-align: center;
+        }
+        &-form{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            &-text1{
+                    @include textProperty;
+                    font-size: 20px;
+                    margin: 0;
+                    &-error{
+                        @include textProperty;
+                        top:49vh;
+                        width: 400px;
+                        height: 20px;
+                        border-radius: 5px;
+                        font-size: 15px;
+                        text-align: center;
+                        color: white;
+                        background-color: rgb(223, 39, 39);
+                        position: absolute;
+                        z-index:1;
+                        opacity: 0;
+                        transition: 0.3s;
+                    }
+                }
+            &-name{
+                    @include textProperty;
+                    font-size: 25px;
+                    border: none;
+                    width: 400px;
+                    height: 40px;
+                    border-radius: 10px;
+                }
+            &-surname{
+                    @include textProperty;
+                    font-size: 25px;
+                    border: none;
+                    width: 400px;
+                    height: 40px;
+                    border-radius: 10px;
+            }
+            &-login{
+                @include textProperty;
+                font-size: 25px;
+                border: none;
+                width: 400px;
+                height: 40px;
+                border-radius: 10px;
+            }
+            &-password1{
+                @include textProperty;
+                font-size: 25px;
+                border: none;
+                width: 400px;
+                height: 40px;
+                border-radius: 10px;
+            }
+            &-password2{
+                @include textProperty;
+                font-size: 25px;
+                border: none;
+                width: 400px;
+                height: 40px;
+                border-radius: 10px;
+                &-error{
+                    @include textProperty;
+                        top:49vh;
+                        width: 400px;
+                        height: 20px;
+                        border-radius: 5px;
+                        font-size: 15px;
+                        text-align: center;
+                        color: white;
+                        background-color: rgb(223, 39, 39);
+                        position: absolute;
+                        z-index:1;
+                        opacity: 0;
+                        transition: 0.3s;
+                }
+            }
+            .log-in{
+                display: grid;
+                grid-template-columns: 1fr;
+            .submit{
+                @include textProperty;
+                text-decoration: none;
+                text-align: center;
+                font-size: 30px;
+                background-color: rgb(252, 75, 75);
+                width: 400px;
+                height: 40px;
+                border: none;
+                border-radius: 10px;
+                color:white;
+                transition: 0.3s;
+                &:hover{
+                    background-color: rgb(255, 255, 255);
+                    color:rgb(252, 75, 75);
+                }
+            }
+            .sing-in{
+                text-decoration: none;
+                text-align: center;
+                @include textProperty;
+                font-size: 30px;
+                background-color: rgb(252, 75, 75);
+                width: 200px;
+                height: 40px;
+                border-radius: 10px;
+                color:white;
+                transition: 0.3s;
+                &:hover{
+                    background-color: rgb(255, 255, 255);
+                    color:rgb(252, 75, 75);
+                }
+            }
+        }
+            .viewing-mode{
+                @include textProperty;
+                color: #e0e0e0;
+                text-decoration: none;
+                text-align: center;
+                background-color: rgb(252, 75, 75);
+                width: 300px;
+                height: 100px;
+                border-radius: 10px;
+                transition: 0.5s;
+                &:hover{
+                    background-color: rgb(255, 255, 255);
+                    color:rgb(252, 75, 75);
+                }
+            }
+        }
+    }
+}

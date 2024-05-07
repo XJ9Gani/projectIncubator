@@ -1,0 +1,110 @@
+@import url(view.css);
+body {
+  min-height: 150vh;
+}
+
+main {
+  background-color: #1a1a1a;
+  height: 180vh;
+}
+
+.top-event {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 90px;
+  margin: auto;
+  height: 180vh;
+}
+.top-event-container {
+  background-color: white;
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: 0 0 10px 10px rgb(44, 44, 44);
+  border-radius: 5%;
+  width: 25vw;
+  height: 60vh;
+}
+.top-event-container-text {
+  font-family: sans-serif;
+  color: #1a1a1a;
+  font-size: 40px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+  background: #2c2c2c;
+  text-transform: capitalize;
+  text-align: center;
+  color: #b6b6b6;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px transparent;
+}
+.top-event-container-details {
+  font-family: sans-serif;
+  color: #1a1a1a;
+  font-size: 30px;
+  text-decoration: none;
+  opacity: 0;
+  display: block;
+  width: 50%;
+  height: 10%;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: auto;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  transition: 0.3s;
+}
+.top-event-container-details:hover {
+  background-color: white;
+  color: #1a1a1a;
+  box-shadow: 0 0 5px 5px black;
+}
+.top-event-container-number {
+  opacity: 0;
+  text-align: center;
+  transition: 0.5s;
+  font-family: sans-serif;
+  color: #1a1a1a;
+  font-size: 250px;
+  text-decoration: none;
+  background: #2c2c2c;
+  text-transform: capitalize;
+  text-align: center;
+  color: #ada9a9;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 10px transparent;
+}
+.top-event-container:hover .top-event-container-text, .top-event-container:hover .top-event-container-number, .top-event-container:hover .top-event-container-details {
+  opacity: 1;
+}
+.top-event-container.event1 {
+  background-image: url(topEvent.jpg);
+  background-size: contain;
+}
+.top-event-container.event2 {
+  background-image: url(stand-up.jpeg);
+  background-size: contain;
+}
+.top-event-container.event3 {
+  background-image: url(scorpions.jpg);
+  background-size: contain;
+}
+.top-event-container.event4 {
+  background-image: url(tursnbek.png);
+  background-size: contain;
+}
+.top-event-container.event5 {
+  background-image: url(ne-prost.webp);
+  background-size: contain;
+}
+.top-event-container.event6 {
+  background-image: url(orda.jpg);
+  background-size: contain;
+}/*# sourceMappingURL=mainStyle.css.map */

@@ -1,0 +1,59 @@
+@import url(bookStyle.css);
+@mixin textProperty($font-size){
+    color: white;
+    font-size: $font-size;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+main{
+    height: 130vh;
+}
+.delivery{
+    &-title{
+        text-align: center;
+        @include textProperty(50px)
+    }
+    &-form{
+        &-text{
+            @include textProperty(30px);
+            text-align: center;
+        }
+        &-name-value{
+            @include textProperty(30px);
+            text-align: center;
+            color: black;
+            margin: auto;
+            width: 400px;
+            height: 50px;
+            border: 1px solid black;
+            background-color: white;
+        }
+        &-place-value ,  &-surname-value , &-event-value{
+            @extend .delivery-form-name-value;
+        }
+        &-adress-value{
+            @include textProperty(30px);
+            color: black;
+            display: block;
+            margin: auto;
+            width: 400px;
+            height: 50px;
+        }
+    }
+    &-submit{
+        @include textProperty(40px);
+        display: block;
+        width: 400px;
+        height: 50px;
+        margin: auto;
+        margin-top: 10px;
+        background-color: #000000;
+        text-align:center;
+        border-radius: 10px;
+        transition: 0.5s;
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+    }
+}
